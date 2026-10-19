@@ -21,14 +21,14 @@
         <p>В этом разделе собраны ключевые этапы моей деятельности и проекты, которыми я горжусь.</p>
         
         <h2>Хронология опыта</h2>
-        <table border="1" cellpadding="10" cellspacing="0">
+        <table id='table' border="1" cellpadding="10" cellspacing="0">
             <tr>
                 <th>2024-2025</th>
                 <th>SMM-компания</th>
                 <th>Являлся контентмейкером для блогов бизнеса или ИП. Самые большие просмотры с видео - 240+ тыс. </th>
             </tr>
         </table>
-
+        <button id="tablebtn">Добавить строку в таблицу</button>
         <h2>Мои главный проект</h2>
         <ol>
             <li>
@@ -36,5 +36,11 @@
             </li>
         </ol>
     </main>
+    <script>
+        const newTableBtn = document.getElementById('tablebtn');
+        newTableBtn.addEventListener('click', () => {
+           const newTable = document.createElement('tr');
+        });
+    </script>
 </body>
 </html>
