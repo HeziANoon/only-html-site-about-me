@@ -20,14 +20,14 @@
         <p>Здесь наглядно представлены технологии, инструменты и личные качества, которыми я владею.</p>
         
         <h2>Профессиональные навыки (Hard Skills)</h2>
-        <ul>
-            <li>Python (Средний уровень)<img src="media/python.png" height="30" weight="30" vspace="5"></li>
-            <li>Базы данных SQL (Базовый уровень)<img src="media/sql.jpg" height="30" weight="30" vspace="5"></li>
-            <li>Язык разметки HTML5 (Базовый уровень)<img src="media/html.png" height="30" weight="30" vspace="5"></li>
+        <ul id='skillslist'>
+            <li>Python (Средний уровень)<img class='icon' src="media/python.png" height="30" weight="30" vspace="5"></li>
+            <li>Базы данных SQL (Базовый уровень)<img class='icon' src="media/sql.jpg" height="30" weight="30" vspace="5"></li>
+            <li>Язык разметки HTML5 (Базовый уровень)<img class='icon' src="media/html.png" height="30" weight="30" vspace="5"></li>
             <li>Работа с текстом и структурирование информации</li>
-            <li>Опыт в создании дизайна (Adobe Photoshop, Figma)<img src="media/photoshop.png" height="30" weight="30" vspace="5"></li>
-            <li>Программы видео монтажа(Adobe Premiere Pro, CapCut)<img src="media/premiere.png" height="30" weight="30" vspace="5"></li>
-            <li>Motion-дизайн и инфографика (Adobe After Effects)<img src="media/aftereffects.png" height="30" weight="30" vspace="5"></li>
+            <li>Опыт в создании дизайна (Adobe Photoshop, Figma)<img class='icon' src="media/photoshop.png" height="30" weight="30" vspace="5"></li>
+            <li>Программы видео монтажа(Adobe Premiere Pro, CapCut)<img class='icon' src="media/premiere.png" height="30" weight="30" vspace="5"></li>
+            <li>Motion-дизайн и инфографика (Adobe After Effects)<img class='icon' src="media/aftereffects.png" height="30" weight="30" vspace="5"></li>
         </ul>
 
         <h2>Личные качества (Soft Skills)</h2>
@@ -38,5 +38,15 @@
             <li><font size ="5" color="#169612" face="times new roman">Дисциплинированность</font></li>
         </ul>
     </main>
+    <script>
+        const skillsList = document.getElementById('skillslist');
+        skillsList.addEventListener('click', function(event) {
+            const imageSkill = event.targer.closest('.icon');
+            if (imageSkill) {
+                imageSkill.style.height = 50;
+                imageSkill.style.weight = 50;
+            }
+        });
+    </script>
 </body>
 </html>
