@@ -21,13 +21,13 @@
         
         <h2>Профессиональные навыки (Hard Skills)</h2>
         <ul id='skillslist'>
-            <li>Python (Средний уровень)<img class='icon' src="media/python.png" height="30" weight="30" vspace="5"></li>
-            <li>Базы данных SQL (Базовый уровень)<img class='icon' src="media/sql.jpg" height="30" weight="30" vspace="5"></li>
-            <li>Язык разметки HTML5 (Базовый уровень)<img class='icon' src="media/html.png" height="30" weight="30" vspace="5"></li>
+            <li>Python (Средний уровень)<img class='icon' src="media/python.png" height="30" width="30" vspace="5"></li>
+            <li>Базы данных SQL (Базовый уровень)<img class='icon' src="media/sql.jpg" height="30" width="30" vspace="5"></li>
+            <li>Язык разметки HTML5 (Базовый уровень)<img class='icon' src="media/html.png" height="30" width="30" vspace="5"></li>
             <li>Работа с текстом и структурирование информации</li>
-            <li>Опыт в создании дизайна (Adobe Photoshop, Figma)<img class='icon' src="media/photoshop.png" height="30" weight="30" vspace="5"></li>
-            <li>Программы видео монтажа(Adobe Premiere Pro, CapCut)<img class='icon' src="media/premiere.png" height="30" weight="30" vspace="5"></li>
-            <li>Motion-дизайн и инфографика (Adobe After Effects)<img class='icon' src="media/aftereffects.png" height="30" weight="30" vspace="5"></li>
+            <li>Опыт в создании дизайна (Adobe Photoshop, Figma)<img class='icon' src="media/photoshop.png" height="30" width="30" vspace="5"></li>
+            <li>Программы видео монтажа(Adobe Premiere Pro, CapCut)<img class='icon' src="media/premiere.png" height="30" width="30" vspace="5"></li>
+            <li>Motion-дизайн и инфографика (Adobe After Effects)<img class='icon' src="media/aftereffects.png" height="30" width="30" vspace="5"></li>
         </ul>
 
         <h2>Личные качества (Soft Skills)</h2>
@@ -41,10 +41,10 @@
     <script>
         const skillsList = document.getElementById('skillslist');
         skillsList.addEventListener('click', function(event) {
-            const imageSkill = event.targer.closest('.icon');
+            const imageSkill = event.target.closest('.icon');
             if (imageSkill) {
-                imageSkill.style.height = 50;
-                imageSkill.style.weight = 50;
+                imageSkill.style.height = '50px';
+                imageSkill.style.width = '50px';
             }
         });
     </script>
