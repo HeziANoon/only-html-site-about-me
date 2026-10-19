@@ -41,9 +41,15 @@
                 <textarea id="message" name="user_message" rows="5" cols="30" placeholder="Текст вашего сообщения..." required></textarea>
             </p>
             <p>
-                <button type="submit">Отправить сообщение</button>
+                <button id="contactSubmit"type="submit">Отправить сообщение</button>
             </p>
         </form>
     </main>
+    <script>
+        const submitBtn = document.getElementById("contactSubmit");
+        submitBtn.addEventListener('click', () => {
+            submitBtn.textContent = 'Сообщение отправлено';
+        })
+    </script>
 </body>
 </html>
