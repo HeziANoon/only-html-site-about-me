@@ -41,6 +41,11 @@
         const table = document.getElementById('table')
         newTableBtn.addEventListener('click', () => {
            const newRow = document.createElement('tr');
+           newRow.innerHTML = `
+            <td>2025-2026</td>
+            <td>Новая компания</td>
+            <td>Описание новых достижений и результатов работы.</td>
+            `;
            table.appendChild(newRow);        
         });
     </script>
