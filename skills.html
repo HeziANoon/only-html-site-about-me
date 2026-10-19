@@ -42,9 +42,12 @@
         const skillsList = document.getElementById('skillslist');
         skillsList.addEventListener('click', function(event) {
             const imageSkill = event.target.closest('.icon');
-            if (imageSkill) {
-                imageSkill.style.height = '50px';
-                imageSkill.style.width = '50px';
+            if (imageSkill.style.height === '70px' ) {
+                imageSkill.style.height = '30px';
+                imageSkill.style.width = '30px';
+            } else {
+                imageSkill.style.height = '70px';
+                imageSkill.style.width = '70px';
             }
         });
     </script>
