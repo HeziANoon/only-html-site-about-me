@@ -18,7 +18,7 @@
     <main>
         <h1>Обо мне</h1>
         <p>Я родился в г.Мичуринск 27 июля 2006 года. Учился в обычной городской школе, в 2024 году поступил в ТГУ им. Г.Р. Державина на направление "Прикладная математика и информатика"</p>
-        <img src="media/tsutmb.png">
+        <img id='imagetsu' src="media/tsutmb.png" style="opacity: 0.5">
         <h2>Хобби и увлечения</h2>
         <p>Помимо основной деятельности, я увлекаюсь:</p>
         <ul>
@@ -27,5 +27,14 @@
             <li><font size ="5" color="#169612" face="times new roman"><u>Компьютерными играми</u></font></li>
         </ul>
     </main>
+    <script>
+        const imagetsu = document.getElementById(imagetsu);
+        imagetsu.addEventListener('mouseenter', () => {
+            imagetsu.style.opacity = '1';
+        });
+        imagetsu.addEventListener('mouseleave', () => {
+            imagetsu.style.opacity = '0.5';
+        });
+    </script>
 </body>
 </html>
