@@ -43,14 +43,18 @@
             <p>
                 <button id="contactSubmit"type="submit">Отправить сообщение</button>
             </p>
+            <p>
+                <h2 id="submitMessage"></h2>
+            </p>
         </form>
     </main>
     <script>
         const form = getElementById('feedbackForm');
+        const message = getElementById('submitMessage');
         const submitBtn = document.getElementById("contactSubmit");
         submitBtn.addEventListener('submit', function(event) {
             event.preventDefault();
-            submitBtn.textContent = 'Сообщение отправлено';
+            message.textContent = 'Сообщение отправлено';
         });
     </script>
 </body>
