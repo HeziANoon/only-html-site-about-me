@@ -27,7 +27,7 @@
         </ul>
 
         <h2>Форма обратной связи</h2>
-        <form>
+        <form id="feedbackForm">
             <p>
                 <label for="name">Ваше имя:</label><br>
                 <input type="text" id="name" name="user_name" placeholder="Введите имя" required>
@@ -46,8 +46,10 @@
         </form>
     </main>
     <script>
+        const form = getElementById('feedbackForm');
         const submitBtn = document.getElementById("contactSubmit");
-        submitBtn.addEventListener('click', () => {
+        submitBtn.addEventListener('submit', function(event) {
+            event.preventDefault();
             submitBtn.textContent = 'Сообщение отправлено';
         });
     </script>
